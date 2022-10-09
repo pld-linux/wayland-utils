@@ -19,6 +19,7 @@ BuildRequires:	wayland-protocols >= 1.24
 BuildRequires:	xz
 Requires:	libdrm >= 2.4.107
 Requires:	wayland >= 1.20.0
+Obsoletes:	wayland-info <= 0.0.1-0.20211213.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
