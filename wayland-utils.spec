@@ -13,6 +13,7 @@ BuildRequires:	libdrm-devel >= 2.4.107
 BuildRequires:	meson >= 0.47
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	wayland-devel >= 1.20.0
 BuildRequires:	wayland-protocols >= 1.24
