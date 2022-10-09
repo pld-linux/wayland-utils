@@ -1,19 +1,24 @@
 Summary:	wayland-info utility
 Summary(pl.UTF-8):	Narzędzie wayland-info
 Name:		wayland-utils
-Version:	1.0.0
+Version:	1.1.0
 Release:	1
 License:	MIT
 Group:		Applications
 #Source0Download: https://wayland.freedesktop.org/releases.html
-Source0:	https://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	714875aefb10e7f683cde24e58d033ad
+Source0:	https://gitlab.freedesktop.org/wayland/wayland-utils/-/releases/%{version}/downloads/%{name}-%{version}.tar.xz
+# Source0-md5:	1a398cbb75c3ac1ac231b2a8f84bd6d6
 URL:		https://wayland.freedesktop.org/
+BuildRequires:	libdrm-devel >= 2.4.107
 BuildRequires:	meson >= 0.47
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
-BuildRequires:	wayland-devel >= 1.17.0
-Requires:	wayland >= 1.17.0
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	wayland-devel >= 1.20.0
+BuildRequires:	wayland-protocols >= 1.24
+BuildRequires:	xz
+Requires:	libdrm >= 2.4.107
+Requires:	wayland >= 1.20.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
